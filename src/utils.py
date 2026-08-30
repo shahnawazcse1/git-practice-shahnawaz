@@ -1,6 +1,19 @@
 def add(a, b):
-    return a + b
+    try:
+        return a + b
+    except TypeError:
+        return "Error: Please provide numbers only."
 
 
 def subtract(a, b):
-    return a - b
+    try:
+        return a - b
+    except TypeError:
+        return "Error: Please provide numbers only."
+
+
+def multiply(a, b):
+    try:
+        return a * b
+    except TypeError:
+        return "Error: Please provide numbers only."
